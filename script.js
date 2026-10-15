@@ -108,7 +108,7 @@ console.log(result);
 // Use Number() to convert a value received through prompt() into a number. Add 10 and print the result.
 let num = prompt("Enter a number:");
 num = Number(num);
-console.log(num + 10);
+alert(num + 10);
 
 // Use Boolean() to check the Boolean values of an empty string, a non-empty string, 0, and true.
 console.log(Boolean(""));
@@ -117,47 +117,47 @@ console.log(Boolean(0));
 console.log(Boolean(true));
 
 // Write an if-else statement to check whether a number is positive or not.
-let n = 10;
+let n = Number("Enter a Number:");
 if (n > 0) {
-    console.log("Positive number");
+    alert("Positive number");
 } else {
-    console.log("Not a positive number");
+    alert("Not a positive number");
 }
 
 // Use else-if to display a message based on the time entered by the user: early morning, morning, afternoon, evening, or night.
 let time = Number(prompt("Enter the time (1-24):"));
 if (time >= 1 && time < 6) {
-    console.log("Night");
+    alert("Night");
 } else if (time >= 6 && time < 10) {
-    console.log("Early Morning");
+    alert("Early Morning");
 } else if (time >= 10 && time < 13) {
-    console.log("Morning");
+    alert("Morning");
 } else if (time >= 13 && time < 18) {
-    console.log("Afternoon");
+    alert("Afternoon");
 } else if (time >= 18 && time < 22) {
-    console.log("Evening");
+    alert("Evening");
 } else if (time >= 22 && time <= 24) {
-    console.log("Night");
+    alert("Night");
 } else {
-    console.log("Invalid time");
+    alert("Invalid time");
 }
 
 // Create a nested if statement to check eligibility based on age, height, and weight, following the conditions in your code.
-let ag2 = 20;
-let height = 170;
-let weight = 65;
+let ag2 = prompt("Enter Your age:");
+let height = prompt("Enter Your height:");
+let weight = prompt("Enter Your weight:");
 if (ag2 >= 18) {
     if (height >= 160) {
         if (weight >= 50) {
-            console.log("Eligible");
+            alert("Eligible");
         } else {
-            console.log("Weight requirement not satisfied");
+            alert("Weight requirement not satisfied");
         }
     } else {
-        console.log("Height requirement not satisfied");
+        alert("Height requirement not satisfied");
     }
 } else {
-    console.log("Age requirement not satisfied");
+    alert("Age requirement not satisfied");
 }
 
 // Part 4: Switch and Loops (8 Questions)
@@ -177,7 +177,7 @@ switch (color.toLowerCase()) {
         break;
 
     default:
-        console.log("Invalid color");
+        console.error("Invalid color");
 }
 
 // Use a for loop to print numbers from 1 to 20.
