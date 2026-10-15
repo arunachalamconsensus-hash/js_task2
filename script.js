@@ -117,7 +117,7 @@ console.log(Boolean(0));
 console.log(Boolean(true));
 
 // Write an if-else statement to check whether a number is positive or not.
-let n = Number("Enter a Number:");
+let n = Number(prompt("Enter a Number:"));
 if (n > 0) {
     alert("Positive number");
 } else {
@@ -143,9 +143,9 @@ if (time >= 1 && time < 6) {
 }
 
 // Create a nested if statement to check eligibility based on age, height, and weight, following the conditions in your code.
-let ag2 = prompt("Enter Your age:");
-let height = prompt("Enter Your height:");
-let weight = prompt("Enter Your weight:");
+let ag2 = Number(prompt("Enter Your age:"));
+let height = Number(prompt("Enter Your height:"));
+let weight = Number(prompt("Enter Your weight:"));
 if (ag2 >= 18) {
     if (height >= 160) {
         if (weight >= 50) {
@@ -235,10 +235,10 @@ for (let key in student1) {
 // Take two numbers using prompt() and display their sum, difference, product, and remainder.
 let num1 = Number(prompt("Enter first number:"));
 let num2 = Number(prompt("Enter second number:"));
-alert("Sum:", num1 + num2);
-alert("Difference:", num1 - num2);
-alert("Product:", num1 * num2);
-alert("Remainder:", num1 % num2);
+alert("Sum:"+ (num1 + num2));
+alert("Difference:"+ (num1 - num2));
+alert("Product:"+ (num1 * num2));
+alert("Remainder:"+ (num1 % num2));
 
 // Create an array of 5 numbers and use a loop to print only the numbers greater than 10.
 let numbers = [5, 15, 8, 20, 12];
