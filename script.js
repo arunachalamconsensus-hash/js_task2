@@ -235,10 +235,10 @@ for (let key in student1) {
 // Take two numbers using prompt() and display their sum, difference, product, and remainder.
 let num1 = Number(prompt("Enter first number:"));
 let num2 = Number(prompt("Enter second number:"));
-console.log("Sum:", num1 + num2);
-console.log("Difference:", num1 - num2);
-console.log("Product:", num1 * num2);
-console.log("Remainder:", num1 % num2);
+alert("Sum:", num1 + num2);
+alert("Difference:", num1 - num2);
+alert("Product:", num1 * num2);
+alert("Remainder:", num1 % num2);
 
 // Create an array of 5 numbers and use a loop to print only the numbers greater than 10.
 let numbers = [5, 15, 8, 20, 12];
